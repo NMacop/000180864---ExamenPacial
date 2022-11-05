@@ -1,0 +1,18 @@
+<main>
+  <mat-toolbar class="header">
+    <div>
+      UPAO - 000 180 864
+    </div>
+    <div>
+      <button mat-button mat-raised-button [routerLink]="'/inscription'">
+        Inscriptions
+      </button>
+      <button mat-button mat-raised-button [routerLink]="'/reports'">
+        Reports
+      </button>
+    </div>
+  </mat-toolbar>
+  <div class="main-container">
+    <router-outlet></router-outlet>
+  </div>
+</main>

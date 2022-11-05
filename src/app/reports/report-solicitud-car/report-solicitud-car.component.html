@@ -1,0 +1,9 @@
+
+<ng-container *ngIf="cars$ | async as cars">
+  <mat-card style="margin-bottom: 20px;" *ngFor="let car of cars">
+    <mat-card-header>SOLICITUD</mat-card-header>
+    <mat-card-subtitle>id {{ car.id }}</mat-card-subtitle>
+    <mat-card-subtitle>fecha {{ car.fecha }}</mat-card-subtitle>
+    <mat-card-subtitle>placa {{ car.placa }}</mat-card-subtitle>
+  </mat-card>
+</ng-container>
